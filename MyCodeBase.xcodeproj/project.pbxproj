@@ -12,6 +12,11 @@
 		E547463621748C7900B6B42B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E547463421748C7900B6B42B /* Main.storyboard */; };
 		E547463821748C7B00B6B42B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E547463721748C7B00B6B42B /* Assets.xcassets */; };
 		E547463B21748C7B00B6B42B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E547463921748C7B00B6B42B /* LaunchScreen.storyboard */; };
+		E547464321748F5800B6B42B /* UIViewController+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = E547464221748F5800B6B42B /* UIViewController+Init.swift */; };
+		E54746452174902B00B6B42B /* QQNavChangeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54746442174902B00B6B42B /* QQNavChangeController.swift */; };
+		E5474647217490A500B6B42B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5474646217490A400B6B42B /* BaseViewController.swift */; };
+		E5557ECC2176CDCB00CEF95D /* QQCustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5557ECB2176CDCB00CEF95D /* QQCustomNavBar.swift */; };
+		E5557ECE2176E6D700CEF95D /* QQCustomNavBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5557ECD2176E6D700CEF95D /* QQCustomNavBar.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		E547463721748C7B00B6B42B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E547463A21748C7B00B6B42B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E547463C21748C7B00B6B42B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E547464221748F5800B6B42B /* UIViewController+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Init.swift"; sourceTree = "<group>"; };
+		E54746442174902B00B6B42B /* QQNavChangeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQNavChangeController.swift; sourceTree = "<group>"; };
+		E5474646217490A400B6B42B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E5557ECB2176CDCB00CEF95D /* QQCustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QQCustomNavBar.swift; sourceTree = "<group>"; };
+		E5557ECD2176E6D700CEF95D /* QQCustomNavBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QQCustomNavBar.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,27 @@
 		E547462F21748C7900B6B42B /* MyCodeBase */ = {
 			isa = PBXGroup;
 			children = (
+				E5557ECA2176CDAA00CEF95D /* View */,
+				E5474646217490A400B6B42B /* BaseViewController.swift */,
+				E547464221748F5800B6B42B /* UIViewController+Init.swift */,
 				E547463021748C7900B6B42B /* AppDelegate.swift */,
 				E547463221748C7900B6B42B /* ViewController.swift */,
+				E54746442174902B00B6B42B /* QQNavChangeController.swift */,
 				E547463421748C7900B6B42B /* Main.storyboard */,
 				E547463721748C7B00B6B42B /* Assets.xcassets */,
 				E547463921748C7B00B6B42B /* LaunchScreen.storyboard */,
 				E547463C21748C7B00B6B42B /* Info.plist */,
 			);
 			path = MyCodeBase;
+			sourceTree = "<group>";
+		};
+		E5557ECA2176CDAA00CEF95D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5557ECB2176CDCB00CEF95D /* QQCustomNavBar.swift */,
+				E5557ECD2176E6D700CEF95D /* QQCustomNavBar.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E547463B21748C7B00B6B42B /* LaunchScreen.storyboard in Resources */,
+				E5557ECE2176E6D700CEF95D /* QQCustomNavBar.xib in Resources */,
 				E547463821748C7B00B6B42B /* Assets.xcassets in Resources */,
 				E547463621748C7900B6B42B /* Main.storyboard in Resources */,
 			);
@@ -135,8 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5557ECC2176CDCB00CEF95D /* QQCustomNavBar.swift in Sources */,
+				E5474647217490A500B6B42B /* BaseViewController.swift in Sources */,
 				E547463321748C7900B6B42B /* ViewController.swift in Sources */,
 				E547463121748C7900B6B42B /* AppDelegate.swift in Sources */,
+				E547464321748F5800B6B42B /* UIViewController+Init.swift in Sources */,
+				E54746452174902B00B6B42B /* QQNavChangeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SW7LUV96PH;
+				DEVELOPMENT_TEAM = 777GCYMBSV;
 				INFOPLIST_FILE = MyCodeBase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SW7LUV96PH;
+				DEVELOPMENT_TEAM = 777GCYMBSV;
 				INFOPLIST_FILE = MyCodeBase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
